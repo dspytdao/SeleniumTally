@@ -26,8 +26,8 @@ def home():
     page = browser.page_source
     soup = BeautifulSoup(page, features="html.parser")
     filter=soup.find_all("p")
-    for i in range(0,  len(filter)):
-        print(f"{i}-{filter[i].get_text()}")
+    #for i in range(0,  len(filter)):
+    #    print(f"{i}-{filter[i].get_text()}")
     #print(filter)
     #browser.close()
     browser.quit()
